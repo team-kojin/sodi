@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=640">
+		<title>SOSYARU-DISUTANSU</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				font: 12pt 'Meiryo', sans-serif;
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.canvas {
+				display: block;
+				position: relative;
+				margin: auto;
+				width: 640px;
+				height: 480px;
+				z-index: 1000;
+				background-color: black;
+				color: white;
+			}
+
+			.submenu {
+				position: absolute;
+				display: block;
+				left: 160px;
+				top: 100px;
+				z-index: 10000;
+				margin: auto;
+				padding: 1em;
+				width: 320px;
+				height: 280px;
+				background-color: lightgrey;
+				border-style: outset;
+				filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, .7));
+			}
+
+			.submenu input {
+				width: 100%;
+			}
+
+			.note {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: x-small;
+			}
+
+		</style>
+		<script src="./asset/script/sodi.js" async defer></script>
+	</head>
+
+	<body oncontextmenu="return false;">
+		<canvas class="canvas">あなたのブラウザは Canvas をサポートしていないようです……</canvas>
+	</body>
+
+</html>

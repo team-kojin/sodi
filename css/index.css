@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Saitamaar";
+  src: url("../font/Saitamaar.woff2") format("woff2"),
+    url("../font/Saitamaar.woff") format("woff"),
+    url("../font/Saitamaar.ttf") format("ttf");
+  font-display: swap;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	background-color: rgb(128, 255, 128);
+	max-width: 680px;
+	font: 12pt 'MS PGothic', 'Saitamaar', sans-serif;
+}
+
+button {
+	position: relative;
+	padding: 2px;
+	font-family: 'MS PGothic', 'Saitamaar', sans-serif;
+	font-size: large;
+	line-height: 1.1;
+	width: 200px;
+	height: 100px;
+	overflow: hidden;
+	border: outset 3px;
+	max-width: 100%;
+	background-color: lightgray;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+button:active {
+	border: inset 3px;
+}
+
+.cover {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 640px;
+	height: 480px;
+
+	background: url('../asset/image/title.png'), whitesmoke;
+}
+
+.center {
+	text-align: center;
+}
+
+.oshare {
+	position: relative;
+	font: 48pt 'Chango', 'Geogia', cursive;
+	top: 290px;
+	filter: drop-shadow(5px 5px 2px gray);
+}
+
+.hima {
+	font: italic bold 48pt 'Yu Gothic', 'Meiryo', 'MS PGothic', sans-serif;
+	color: red;
+	animation: blink .5s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	49% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.rikai {
+	position: relative;
+	margin: auto;
+	padding: 1em;
+	width: 12em;
+	height: 5em;
+	text-align: left;
+	font-size: x-large;
+	font-family: 'MS PGothic', sans-serif;
+	white-space: nowrap;
+	overflow: visible;
+	border: double 6px;
+	border-radius: 1em;
+}
+
+iframe {
+	width: 100%;
+	height: 40rem;
+	border: none;
+}
+
+table {
+	width: 640px;
+	margin: auto;
+	border: ridge 2px;
+}
+
+table th,
+table td {
+	text-align: center;
+	border: ridge 2px;
+	height: 2em;
+}
+
+
+.buttons figure {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.buttons img {
+	max-width: 100%;
+}
