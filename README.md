@@ -1,0 +1,2 @@
+# sodi
+SOSYARU DISUTANSU
