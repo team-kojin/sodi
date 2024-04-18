@@ -965,8 +965,8 @@ const mknpad = {
                     await mknpad.game.main();
                     break;
                 case 1:
-                    window.open('https://www.stopcovid19.jp/', '_blank');
                     mknpad.music.stop('title');
+                    window.alert('最新の情報はもう提供されていません。');
                     break;
                 case 2:
                     mknpad.game.exit();
